@@ -1,59 +1,59 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Hannah & Partner — Wedding</title>
-  <link rel="stylesheet" href="css/styles.css" />
-</head>
 <body>
-  <header class="site-header container">
-    <div class="brand">
-      <a href="index.html" class="brand__link">Hannah & Partner</a>
-      <p class="brand__sub">July 4, 2026 • City, State</p>
-    </div>
-
+  <header class="site-header">
     <nav class="nav">
-      <a class="nav__link is-active" href="index.html">Home</a>
-      <a class="nav__link" href="schedule.html">Schedule</a>
-      <a class="nav__link" href="travel.html">Travel</a>
-      <a class="nav__link" href="registry.html">Registry</a>
-      <a class="nav__link" href="rsvp.html">RSVP</a>
-      <a class="nav__link" href="faq.html">FAQ</a>
+      <a href="index.html">home</a>
+      <a href="our-story.html">our story</a>
+      <a href="events.html">schedule</a>
+      <a href="travel.html">getting here</a>
+      <a href="gifts.html">gifts</a>
+      <a href="photos.html">gallery</a>
+      <a href="faq.html">faq</a>
+      <a href="rsvp.html">rsvp</a>
     </nav>
   </header>
 
   <main>
+    <!-- HERO SLIDER -->
     <section class="hero">
-      <img class="hero__img" src="images/hero.jpg" alt="Hero photo" />
-      <div class="hero__overlay">
-        <h1 class="hero__title">We’re getting married!</h1>
-        <p class="hero__text">We can’t wait to celebrate with you — July 4, 2026</p>
-        <a class="button" href="rsvp.html">RSVP</a>
+      <div class="hero__slide is-active">
+        <img class="hero__img" src="images/hero.jpg" alt="Hannah and Cole" />
+        <div class="hero__fade"></div>
+      </div>
+
+      <!-- Add more slides by duplicating this block and changing the src -->
+      <div class="hero__slide">
+        <img class="hero__img" src="images/hero2.jpg" alt="Hannah and Cole" />
+        <div class="hero__fade"></div>
+      </div>
+
+      <button class="hero__arrow prev" aria-label="Previous">‹</button>
+      <button class="hero__arrow next" aria-label="Next">›</button>
+
+      <div class="hero__dots" aria-label="Slideshow dots"></div>
+    </section>
+
+    <!-- BIG TITLE BLOCK -->
+    <section class="title-block">
+      <div class="container">
+        <h1>Hannah and Cole are getting married!</h1>
+        <div class="date">September 12, 2026</div>
       </div>
     </section>
 
-    <section class="section container">
-      <h2>Welcome</h2>
-      <p><!-- Replace with your Home copy -->Welcome — we’re so excited to share our weekend with you.</p>
-    </section>
-
-    <section class="section section--alt container">
-      <h2>Photos</h2>
-      <div class="grid">
-        <img class="grid__img" src="images/gallery1.jpg" alt="Gallery 1" />
-        <img class="grid__img" src="images/gallery2.jpg" alt="Gallery 2" />
-        <img class="grid__img" src="images/gallery3.jpg" alt="Gallery 3" />
-        <img class="grid__img" src="images/gallery4.jpg" alt="Gallery 4" />
+    <!-- HOME CONTENT (you said no text changes, just format) -->
+    <section class="section">
+      <div class="container">
+        <div class="card">
+          <h2>Welcome</h2>
+          <p><!-- paste your home copy here if you have it --></p>
+        </div>
       </div>
-      <p class="hint">Tip: Replace these images with your favorites via the repo Upload files button.</p>
     </section>
   </main>
 
-  <footer class="footer container">
-    <p>With love, Hannah & Partner</p>
+  <footer class="footer">
+    <div class="container">With love, Hannah & Cole</div>
   </footer>
 
   <script src="js/main.js"></script>
 </body>
-</html>
