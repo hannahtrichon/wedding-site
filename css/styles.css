@@ -141,3 +141,35 @@ body{
 .footer{
   display: none;
 }
+
+/* ===== MOBILE FIX FOR OUR STORY PAGE ===== */
+
+html {
+  scroll-padding-top: 80px;
+}
+
+@media (max-width: 600px){
+
+  .page-banner{
+    height: 200px;
+  }
+
+  .title-block{
+    padding-top: 25px;
+    padding-bottom: 20px;
+  }
+
+  .title-block h1{
+    font-size: 40px !important;
+    line-height: 1.1;
+    margin: 0 10px;
+  }
+
+  .container{
+    width: 94%;
+  }
+
+  .card p{
+    font-size: 16px;
+  }
+}
