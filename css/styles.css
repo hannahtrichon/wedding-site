@@ -5,9 +5,7 @@
   --text: #2b2b2b;
 }
 
-*{
-  box-sizing: border-box;
-}
+*{ box-sizing: border-box; }
 
 html, body{
   margin: 0;
@@ -49,9 +47,7 @@ body{
   color: #333;
 }
 
-.nav a:hover{
-  opacity: 0.7;
-}
+.nav a:hover{ opacity: 0.7; }
 
 /* ===== BANNER ===== */
 
@@ -77,9 +73,10 @@ body{
 }
 
 .title-block h1{
-  font-family: 'Pinyon Script', cursive;
+  font-family: 'Ballerina', cursive;
   font-size: clamp(60px, 7vw, 95px);
   margin: 0;
+  line-height: 1.05;
 }
 
 .title-block .date{
@@ -100,11 +97,26 @@ body{
   margin: 0 auto;
 }
 
-/* Remove card look completely */
+/* keep content seamless */
 .card{
   background: transparent;
   border: none;
   padding: 0;
+}
+
+/* section headings */
+.card h2{
+  font-family: 'Ballerina', cursive;
+  font-size: 56px;
+  margin: 40px 0 10px;
+  line-height: 1.05;
+}
+
+.hr{
+  height: 1px;
+  background: rgba(0,0,0,.12);
+  width: 220px;
+  margin: 34px auto;
 }
 
 /* ===== GALLERY GRID ===== */
@@ -125,34 +137,23 @@ body{
 
 /* Tablet */
 @media (min-width: 700px){
-  .gallery{
-    grid-template-columns: repeat(3, 1fr);
-  }
+  .gallery{ grid-template-columns: repeat(3, 1fr); }
 }
 
 /* Desktop */
 @media (min-width: 1000px){
-  .gallery{
-    grid-template-columns: repeat(4, 1fr);
-  }
+  .gallery{ grid-template-columns: repeat(4, 1fr); }
 }
 
 /* Hide footer if present */
-.footer{
-  display: none;
-}
+.footer{ display: none; }
 
-/* ===== MOBILE FIX FOR OUR STORY PAGE ===== */
+/* ===== MOBILE FIX ===== */
 
-html {
-  scroll-padding-top: 80px;
-}
+html{ scroll-padding-top: 80px; }
 
 @media (max-width: 600px){
-
-  .page-banner{
-    height: 200px;
-  }
+  .page-banner{ height: 200px; }
 
   .title-block{
     padding-top: 25px;
@@ -161,15 +162,10 @@ html {
 
   .title-block h1{
     font-size: 40px !important;
-    line-height: 1.1;
     margin: 0 10px;
   }
 
-  .container{
-    width: 94%;
-  }
+  .container{ width: 94%; }
 
-  .card p{
-    font-size: 16px;
-  }
+  .card p{ font-size: 16px; }
 }
