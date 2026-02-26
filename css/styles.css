@@ -202,3 +202,19 @@ main:not(.home-page) .title-block h1::after{
 .section .card h2:first-of-type{
   margin-top: 14px !important;
 }
+
+/* ===== Make title font weight look consistent across desktop + mobile ===== */
+
+/* Smooth script font rendering */
+.title-block h1, .card h1, .card h2{
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: geometricPrecision;
+  font-weight: 400; /* prevents browser from "thickening" */
+}
+
+/* Also apply to your nav if you want consistency */
+.nav a{
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
