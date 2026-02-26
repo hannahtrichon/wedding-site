@@ -149,3 +149,12 @@ body{
 }
 
 .footer{ display:none; }
+/* ===== Travel page sub-header override ===== */
+
+.travel-page h2{
+  font-family: 'EB Garamond', serif !important;
+  font-weight: 600;
+  font-size: 26px;
+  letter-spacing: .02em;
+  margin-top: 40px;
+}
