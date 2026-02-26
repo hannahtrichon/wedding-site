@@ -1,58 +1,178 @@
-<!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Hannah & Cole</title>
+:root{
+  --bg: #fbf8f1;
+  --text: #2b2b2b;
+}
 
-<link rel="icon" type="image/png" href="./favicon.png">
-<link rel="apple-touch-icon" href="./favicon.png">
+*{ box-sizing: border-box; }
 
-<link href="https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&family=EB+Garamond:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/styles.css" />
-</head>
-<body>
+html, body{
+  margin: 0;
+  padding: 0;
+}
 
-<header class="site-header">
-<nav class="nav">
-<a href="./">home</a>
-<a href="./our-story.html">our story</a>
-<a href="./events.html">events</a>
-<a href="./travel.html">travel</a>
-<a href="./gifts.html">gifts</a>
-<a href="./photos.html">gallery</a>
-</nav>
-</header>
+body{
+  font-family: 'EB Garamond', serif;
+  background: var(--bg);
+  color: var(--text);
+  text-align: center;
+  line-height: 1.7;
+  font-size: 18px;
+}
 
-<section class="page-banner">
-<img src="images/images/banner.jpg" alt="Hannah and Cole">
-</section>
+/* NAV */
 
-<main>
+.site-header{
+  position: sticky;
+  top: 0;
+  background: var(--bg);
+  border-bottom: 1px solid rgba(0,0,0,.08);
+  z-index: 100;
+}
 
-<section class="title-block">
-<div class="container">
-<h1>Hannah and Cole are getting married!</h1>
-<div class="date">September 12, 2026</div>
-</div>
-</section>
+.nav{
+  display: flex;
+  justify-content: center;
+  gap: 34px;
+  padding: 18px 10px;
+  flex-wrap: wrap;
+}
 
-<section class="section">
-<div class="container">
-<div class="card">
+.nav a{
+  text-decoration: none;
+  font-size: 15px;
+  letter-spacing: .12em;
+  text-transform: lowercase;
+  color: #333;
+}
 
-<div class="hr"></div>
+.nav a:hover{ opacity: 0.7; }
 
-<p>
-Please explore our website for more wedding weekend details.
-We will continue to update this website as the date comes closer.
-We're so excited to celebrate with you!
-</p>
+/* BANNER */
 
-</div>
-</div>
-</section>
+.page-banner{
+  width: 100%;
+  height: 380px;
+  overflow: hidden;
+  display: block;
+  background: #000;
+}
 
-</main>
-</body>
-</html>
+.page-banner img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* TITLES — 20% SMALLER */
+
+.title-block{
+  padding: 60px 20px 40px;
+}
+
+.title-block h1{
+  font-family: 'Monsieur La Doulaise', cursive;
+  font-size: clamp(45px, 5vw, 75px); /* reduced */
+  margin: 0;
+  line-height: 1.05;
+}
+
+/* Date under homepage title — Garamond bold */
+
+.title-block .date{
+  font-family: 'EB Garamond', serif;
+  font-weight: 600;
+  font-size: 20px;
+  margin-top: 10px;
+  letter-spacing: .03em;
+}
+
+/* Section headings */
+
+.card h2{
+  font-family: 'Monsieur La Doulaise', cursive;
+  font-size: 38px; /* reduced from 48 */
+  margin: 40px 0 10px;
+  line-height: 1.05;
+}
+
+/* Travel & Events override */
+
+.travel-page .card h2,
+.events-page .card h2{
+  font-family: 'EB Garamond', serif !important;
+  font-weight: 600;
+  font-size: 24px;
+  letter-spacing: .02em;
+}
+
+/* SECTIONS */
+
+.section{
+  padding: 40px 0 60px;
+}
+
+.container{
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.card{
+  background: transparent;
+  border: none;
+  padding: 0;
+}
+
+.hr{
+  height: 1px;
+  background: rgba(0,0,0,.12);
+  width: 220px;
+  margin: 34px auto;
+}
+
+/* GALLERY */
+
+.gallery{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+  margin-top: 30px;
+}
+
+.gallery img{
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  display: block;
+}
+
+@media (min-width: 700px){
+  .gallery{ grid-template-columns: repeat(3, 1fr); }
+}
+
+@media (min-width: 1000px){
+  .gallery{ grid-template-columns: repeat(4, 1fr); }
+}
+
+/* MOBILE */
+
+@media (max-width: 600px){
+
+  .page-banner{ height: 200px; }
+
+  .title-block h1{ font-size: 38px; }
+
+  .card h2{ font-size: 28px; }
+
+  .travel-page .card h2,
+  .events-page .card h2{
+    font-size: 20px;
+  }
+
+  .container{ width: 94%; }
+
+  .card p{ font-size: 16px; }
+}
+
+.footer{ display:none; }
