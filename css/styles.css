@@ -176,3 +176,29 @@ main:not(.home-page) .title-block h1::after{
 }
 
 .footer{ display:none; }
+
+/* ===== FIX: Make spacing under page titles consistent with body spacing ===== */
+
+/* Reduce title block bottom padding (this is the big empty area) */
+.title-block{
+  padding-bottom: 6px !important;
+}
+
+/* Tighten the auto divider spacing under titles */
+.title-block h1{
+  padding-bottom: 10px !important;
+}
+
+.title-block h1::after{
+  margin-top: 10px !important;
+}
+
+/* Reduce the gap before the first content section */
+.section{
+  padding-top: 6px !important;
+}
+
+/* Optional: make the first subheader sit more like the rest of the page */
+.section .card h2:first-of-type{
+  margin-top: 14px !important;
+}
