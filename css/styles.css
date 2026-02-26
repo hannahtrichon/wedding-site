@@ -75,13 +75,12 @@ body{
   font-size: clamp(50px, 5vw, 80px);
   margin: 0;
   line-height: 1.05;
-  position: relative;
   padding-bottom: 15px;
 }
 
-/* AUTOMATIC DIVIDER UNDER EVERY PAGE TITLE */
+/* Divider under all page titles EXCEPT home */
 
-.title-block h1::after{
+main:not(.home-page) .title-block h1::after{
   content: "";
   display: block;
   width: 170px;
