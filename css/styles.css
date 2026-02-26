@@ -218,3 +218,60 @@ main:not(.home-page) .title-block h1::after{
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+/* ===== GLOBAL FOOTER SKETCH + DIVIDERS + SUBTLE PARALLAX ===== */
+
+/* Banner: subtle parallax feel (safe-ish) */
+.page-banner{
+  position: relative;
+}
+.page-banner img{
+  transform: translateZ(0);
+  will-change: transform;
+}
+
+/* Subtle parallax only on devices that support fixed background well */
+@media (min-width: 900px){
+  .page-banner{
+    background: #000;
+    overflow: hidden;
+  }
+  .page-banner img{
+    transform: scale(1.06);
+    object-position: center;
+  }
+}
+
+/* Divider utility (you already have .hr) — keep it consistent */
+.hr{
+  width: 170px;
+  margin: 18px auto;
+}
+
+/* Footer sketch section */
+.site-footer{
+  padding: 0 0 28px;
+}
+
+.site-footer .footer-divider{
+  height: 1px;
+  background: rgba(0,0,0,.12);
+  width: 170px;
+  margin: 24px auto 18px;
+}
+
+.site-footer img{
+  width: 220px;          /* smaller footer size */
+  max-width: 70%;
+  height: auto;
+  opacity: 0.95;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Mobile footer sizing */
+@media (max-width: 600px){
+  .site-footer img{
+    width: 180px;
+  }
+}
