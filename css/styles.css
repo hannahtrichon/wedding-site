@@ -51,7 +51,7 @@ body{
 
 .page-banner{
   width: 100%;
-  height: 380px;
+  height: 360px;
   overflow: hidden;
   display: block;
   background: #000;
@@ -64,30 +64,31 @@ body{
   display: block;
 }
 
-/* TITLES — REDUCED SIZE */
+/* TITLES */
 
 .title-block{
-  padding: 60px 20px 40px;
+  padding: 20px 20px 5px; /* tighter spacing */
 }
 
 .title-block h1{
   font-family: 'Monsieur La Doulaise', cursive;
-  font-size: clamp(55px, 6vw, 95px);   /* smaller */
+  font-size: clamp(50px, 5vw, 80px);
   margin: 0;
   line-height: 1.05;
 }
 
-.card h2{
-  font-family: 'Monsieur La Doulaise', cursive;
-  font-size: 48px;  /* reduced from 72px */
-  margin: 40px 0 10px;
-  line-height: 1.05;
+.title-block .date{
+  font-family: 'EB Garamond', serif;
+  font-weight: 600;
+  font-size: 20px;
+  margin-top: 6px;
+  letter-spacing: .03em;
 }
 
 /* SECTIONS */
 
 .section{
-  padding: 40px 0 60px;
+  padding: 5px 0 25px; /* tightened */
 }
 
 .container{
@@ -102,11 +103,23 @@ body{
   padding: 0;
 }
 
+/* Section subheaders (default Garamond bold) */
+
+.card h2{
+  font-family: 'EB Garamond', serif;
+  font-weight: 600;
+  font-size: 26px;
+  letter-spacing: .02em;
+  margin: 20px 0 8px; /* tightened */
+}
+
+/* Divider */
+
 .hr{
   height: 1px;
   background: rgba(0,0,0,.12);
-  width: 220px;
-  margin: 34px auto;
+  width: 140px;
+  margin: 12px auto;
 }
 
 /* GALLERY */
@@ -115,7 +128,7 @@ body{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 14px;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 .gallery img{
@@ -139,9 +152,9 @@ body{
 
   .page-banner{ height: 200px; }
 
-  .title-block h1{ font-size: 42px; }
+  .title-block h1{ font-size: 38px; }
 
-  .card h2{ font-size: 36px; }
+  .card h2{ font-size: 22px; }
 
   .container{ width: 94%; }
 
@@ -149,39 +162,3 @@ body{
 }
 
 .footer{ display:none; }
-/* ===== Travel page sub-header override ===== */
-
-.travel-page h2{
-  font-family: 'EB Garamond', serif !important;
-  font-weight: 600;
-  font-size: 26px;
-  letter-spacing: .02em;
-  margin-top: 40px;
-}
-/* ===== Make all section sub-headers Garamond bold (site-wide) ===== */
-.card h2{
-  font-family: 'EB Garamond', serif !important;
-  font-weight: 600;
-  font-size: 26px;
-  letter-spacing: .02em;
-}
-@media (max-width: 600px){
-  .card h2{ font-size: 22px; }
-}
-
-/* ===== Garamond bold sub-headers for Travel + Events ===== */
-
-.travel-page .card h2,
-.events-page .card h2{
-  font-family: 'EB Garamond', serif !important;
-  font-weight: 600;
-  font-size: 26px;
-  letter-spacing: .02em;
-}
-
-@media (max-width: 600px){
-  .travel-page .card h2,
-  .events-page .card h2{
-    font-size: 22px;
-  }
-}
