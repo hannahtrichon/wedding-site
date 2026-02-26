@@ -275,3 +275,43 @@ main:not(.home-page) .title-block h1::after{
     width: 180px;
   }
 }
+
+/* ===== Even vertical balance between title area and footer on interior pages ===== */
+
+/* Make page layout a vertical column so footer sits at the bottom */
+body{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Let main take up remaining height so footer naturally sits at bottom */
+main{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Make the section fill available space and center content vertically a bit */
+main .section{
+  flex: 1;
+  display: flex;
+  align-items: center;       /* vertical centering */
+}
+
+/* Keep your normal width constraints */
+main .section .container{
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Don’t vertically center the home page (keep it normal) */
+.home-page .section{
+  display: block !important;
+}
+
+/* Don’t vertically center the gallery page grid (it can look weird) */
+.photos-page .section{
+  display: block !important;
+}
