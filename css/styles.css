@@ -158,3 +158,13 @@ body{
   letter-spacing: .02em;
   margin-top: 40px;
 }
+/* ===== Make all section sub-headers Garamond bold (site-wide) ===== */
+.card h2{
+  font-family: 'EB Garamond', serif !important;
+  font-weight: 600;
+  font-size: 26px;
+  letter-spacing: .02em;
+}
+@media (max-width: 600px){
+  .card h2{ font-size: 22px; }
+}
