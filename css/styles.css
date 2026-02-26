@@ -64,10 +64,10 @@ body{
   display: block;
 }
 
-/* TITLES */
+/* TITLES — balanced spacing */
 
 .title-block{
-  padding: 20px 20px 5px; /* tighter spacing */
+  padding: 35px 20px 15px;   /* middle ground */
 }
 
 .title-block h1{
@@ -81,14 +81,14 @@ body{
   font-family: 'EB Garamond', serif;
   font-weight: 600;
   font-size: 20px;
-  margin-top: 6px;
+  margin-top: 8px;
   letter-spacing: .03em;
 }
 
-/* SECTIONS */
+/* SECTION */
 
 .section{
-  padding: 5px 0 25px; /* tightened */
+  padding: 15px 0 35px;   /* balanced */
 }
 
 .container{
@@ -103,14 +103,14 @@ body{
   padding: 0;
 }
 
-/* Section subheaders (default Garamond bold) */
+/* Subheaders */
 
 .card h2{
   font-family: 'EB Garamond', serif;
   font-weight: 600;
   font-size: 26px;
   letter-spacing: .02em;
-  margin: 20px 0 8px; /* tightened */
+  margin: 25px 0 10px;
 }
 
 /* Divider */
@@ -118,8 +118,8 @@ body{
 .hr{
   height: 1px;
   background: rgba(0,0,0,.12);
-  width: 140px;
-  margin: 12px auto;
+  width: 170px;
+  margin: 18px auto;
 }
 
 /* GALLERY */
@@ -128,7 +128,7 @@ body{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 14px;
-  margin-top: 20px;
+  margin-top: 25px;
 }
 
 .gallery img{
@@ -151,6 +151,10 @@ body{
 @media (max-width: 600px){
 
   .page-banner{ height: 200px; }
+
+  .title-block{
+    padding: 25px 15px 10px;
+  }
 
   .title-block h1{ font-size: 38px; }
 
