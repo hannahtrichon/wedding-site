@@ -64,10 +64,10 @@ body{
   display: block;
 }
 
-/* TITLES — balanced spacing */
+/* TITLES */
 
 .title-block{
-  padding: 35px 20px 15px;   /* middle ground */
+  padding: 35px 20px 20px;
 }
 
 .title-block h1{
@@ -75,7 +75,22 @@ body{
   font-size: clamp(50px, 5vw, 80px);
   margin: 0;
   line-height: 1.05;
+  position: relative;
+  padding-bottom: 15px;
 }
+
+/* AUTOMATIC DIVIDER UNDER EVERY PAGE TITLE */
+
+.title-block h1::after{
+  content: "";
+  display: block;
+  width: 170px;
+  height: 1px;
+  background: rgba(0,0,0,.12);
+  margin: 15px auto 0;
+}
+
+/* Date styling */
 
 .title-block .date{
   font-family: 'EB Garamond', serif;
@@ -85,10 +100,10 @@ body{
   letter-spacing: .03em;
 }
 
-/* SECTION */
+/* SECTIONS */
 
 .section{
-  padding: 15px 0 35px;   /* balanced */
+  padding: 15px 0 35px;
 }
 
 .container{
@@ -113,7 +128,7 @@ body{
   margin: 25px 0 10px;
 }
 
-/* Divider */
+/* Divider inside content */
 
 .hr{
   height: 1px;
@@ -151,10 +166,6 @@ body{
 @media (max-width: 600px){
 
   .page-banner{ height: 200px; }
-
-  .title-block{
-    padding: 25px 15px 10px;
-  }
 
   .title-block h1{ font-size: 38px; }
 
