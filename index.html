@@ -1,168 +1,68 @@
-:root{
-  --bg: #fbf8f1;
-  --text: #2b2b2b;
-}
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Hannah & Cole</title>
 
-*{ box-sizing: border-box; }
+<link rel="icon" type="image/png" href="./favicon.png">
+<link rel="apple-touch-icon" href="./favicon.png">
 
-html, body{
-  margin: 0;
-  padding: 0;
-}
+<link href="https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&family=EB+Garamond:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./css/styles.css" />
+</head>
 
-body{
-  font-family: 'EB Garamond', serif;
-  background: var(--bg);
-  color: var(--text);
-  text-align: center;
-  line-height: 1.7;
-  font-size: 18px;
-}
+<body>
 
-/* NAV */
+<header class="site-header">
+<nav class="nav">
+<a href="./">home</a>
+<a href="./our-story.html">our story</a>
+<a href="./events.html">events</a>
+<a href="./travel.html">travel</a>
+<a href="./gifts.html">gifts</a>
+<a href="./photos.html">gallery</a>
+</nav>
+</header>
 
-.site-header{
-  position: sticky;
-  top: 0;
-  background: var(--bg);
-  border-bottom: 1px solid rgba(0,0,0,.08);
-  z-index: 100;
-}
+<section class="page-banner">
+<img src="images/images/banner.jpg" alt="Hannah and Cole">
+</section>
 
-.nav{
-  display: flex;
-  justify-content: center;
-  gap: 34px;
-  padding: 18px 10px;
-  flex-wrap: wrap;
-}
+<main>
 
-.nav a{
-  text-decoration: none;
-  font-size: 15px;
-  letter-spacing: .12em;
-  text-transform: lowercase;
-  color: #333;
-}
+<section class="title-block">
+<div class="container">
+<h1>Hannah and Cole are getting married!</h1>
+<div class="date">September 12, 2026</div>
 
-.nav a:hover{ opacity: 0.7; }
+<!-- Illustration -->
+<div style="margin-top: 30px;">
+  <img src="images/images/house-illustration.png" 
+       alt="Venue Illustration" 
+       style="max-width: 500px; width: 80%; height: auto;">
+</div>
 
-/* BANNER */
+</div>
+</section>
 
-.page-banner{
-  width: 100%;
-  height: 360px;
-  overflow: hidden;
-  display: block;
-  background: #000;
-}
+<section class="section">
+<div class="container">
+<div class="card">
 
-.page-banner img{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
+<div class="hr"></div>
 
-/* TITLES — balanced spacing */
+<p>
+Please explore our website for more wedding weekend details.
+We will continue to update this website as the date comes closer.
+We're so excited to celebrate with you!
+</p>
 
-.title-block{
-  padding: 35px 20px 15px;   /* middle ground */
-}
+</div>
+</div>
+</section>
 
-.title-block h1{
-  font-family: 'Monsieur La Doulaise', cursive;
-  font-size: clamp(50px, 5vw, 80px);
-  margin: 0;
-  line-height: 1.05;
-}
+</main>
 
-.title-block .date{
-  font-family: 'EB Garamond', serif;
-  font-weight: 600;
-  font-size: 20px;
-  margin-top: 8px;
-  letter-spacing: .03em;
-}
-
-/* SECTION */
-
-.section{
-  padding: 15px 0 35px;   /* balanced */
-}
-
-.container{
-  width: 90%;
-  max-width: 1100px;
-  margin: 0 auto;
-}
-
-.card{
-  background: transparent;
-  border: none;
-  padding: 0;
-}
-
-/* Subheaders */
-
-.card h2{
-  font-family: 'EB Garamond', serif;
-  font-weight: 600;
-  font-size: 26px;
-  letter-spacing: .02em;
-  margin: 25px 0 10px;
-}
-
-/* Divider */
-
-.hr{
-  height: 1px;
-  background: rgba(0,0,0,.12);
-  width: 170px;
-  margin: 18px auto;
-}
-
-/* GALLERY */
-
-.gallery{
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 14px;
-  margin-top: 25px;
-}
-
-.gallery img{
-  width: 100%;
-  aspect-ratio: 1 / 1;
-  object-fit: cover;
-  display: block;
-}
-
-@media (min-width: 700px){
-  .gallery{ grid-template-columns: repeat(3, 1fr); }
-}
-
-@media (min-width: 1000px){
-  .gallery{ grid-template-columns: repeat(4, 1fr); }
-}
-
-/* MOBILE */
-
-@media (max-width: 600px){
-
-  .page-banner{ height: 200px; }
-
-  .title-block{
-    padding: 25px 15px 10px;
-  }
-
-  .title-block h1{ font-size: 38px; }
-
-  .card h2{ font-size: 22px; }
-
-  .container{ width: 94%; }
-
-  .card p{ font-size: 16px; }
-}
-
-.footer{ display:none; }
+</body>
+</html>
