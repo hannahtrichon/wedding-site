@@ -316,15 +316,25 @@ main .section .container{
   display: block !important;
 }
 
-/* ===== Active Nav Highlight ===== */
+/* ===== Nav Highlight (Editorial Style) ===== */
 
 .nav a{
-  padding: 8px 14px;
-  border-radius: 4px;
-  transition: background 0.2s ease, color 0.2s ease;
+  position: relative;
+  padding: 4px 2px;
+  transition: color 0.2s ease;
 }
 
 .nav a.active{
-  background-color: #3f4a2a;   /* your green */
-  color: #fbf8f1 !important;   /* cream text */
+  color: #fbf8f1 !important;
+}
+
+.nav a.active::before{
+  content: "";
+  position: absolute;
+  left: -4px;
+  right: -4px;
+  bottom: 2px;
+  height: 60%;
+  background: #3f4a2a;   /* your green */
+  z-index: -1;
 }
