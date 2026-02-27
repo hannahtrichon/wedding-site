@@ -338,3 +338,10 @@ main .section .container{
   background: #3f4a2a;   /* your green */
   z-index: -1;
 }
+
+/* ===== Fix centered text block width ===== */
+
+.card p{
+  max-width: 700px;
+  margin: 0 auto;
+}
