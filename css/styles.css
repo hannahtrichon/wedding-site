@@ -315,3 +315,16 @@ main .section .container{
 .photos-page .section{
   display: block !important;
 }
+
+/* ===== Active Nav Highlight ===== */
+
+.nav a{
+  padding: 8px 14px;
+  border-radius: 4px;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.nav a.active{
+  background-color: #3f4a2a;   /* your green */
+  color: #fbf8f1 !important;   /* cream text */
+}
