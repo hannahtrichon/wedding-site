@@ -172,5 +172,25 @@ Delaware Canal Toepath
   <div class="footer-divider"></div>
   <img src="images/images/house-illustration.png" alt="">
 </footer>
+  <script>
+  (function () {
+    const currentPage = window.location.pathname.split("/").pop();
+    const navLinks = document.querySelectorAll(".nav a");
+
+    navLinks.forEach(link => {
+      const href = link.getAttribute("href");
+
+      // Home page case
+      if ((currentPage === "" || currentPage === "index.html") && href === "./") {
+        link.classList.add("active");
+      }
+
+      // Other pages
+      if (href.includes(currentPage) && currentPage !== "") {
+        link.classList.add("active");
+      }
+    });
+  })();
+</script>
 </body>
 </html>
