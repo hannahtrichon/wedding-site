@@ -9,8 +9,9 @@
 <link rel="apple-touch-icon" href="./favicon.png">
 
 <link href="https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&family=EB+Garamond:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/styles.css" />
+<link rel="stylesheet" href="./css/styles.css" />
 </head>
+
 <body>
 
 <header class="site-header">
@@ -39,38 +40,62 @@
 <section class="section">
 <div class="container">
 <div class="card">
+
 <p>
-We know many of you will be traveling to celebrate with us, and your presence truly means the most to us. Please do not feel any obligation to bring a gift. If you’d like to celebrate with one, we’ll share optional details here closer to the wedding. Thank you endlessly. 
+We know many of you will be traveling to celebrate with us, and your presence truly means the most to us. 
+Please do not feel any obligation to bring a gift. If you’d like to celebrate with one, we have registered at 
+Crate & Barrel, Bloomingdale’s, and Amazon.
 </p>
+
+<div style="margin-top: 28px; line-height: 2;">
+
+<p>
+<em>
+<a href="https://www.crateandbarrel.com/gift-registry/hannah-trichon/r7510208" target="_blank">
+Crate & Barrel
+</a>
+</em>
+</p>
+
+<p>
+<em>Bloomingdale’s — Link to be updated soon</em>
+</p>
+
+<p>
+<em>
+<a href="https://www.amazon.com/wedding/share/HannahandCole-2026" target="_blank">
+Amazon
+</a>
+</em>
+</p>
+
+</div>
+
+<div class="hr"></div>
+
+<p>
+<em>
+If our registries have been 100% purchased, we would be delighted to receive 
+Crate & Barrel gift cards towards a new couch. :)
+</em>
+</p>
+
+<div style="margin-top: 18px;">
+<p>
+Thank you for your generosity and for celebrating this milestone moment with us!!!
+</p>
+</div>
+
 </div>
 </div>
 </section>
 
 </main>
 
-  <footer class="site-footer">
+<footer class="site-footer">
   <div class="footer-divider"></div>
   <img src="images/images/house-illustration.png" alt="">
 </footer>
-  <script>
-  (function () {
-    const currentPage = window.location.pathname.split("/").pop();
-    const navLinks = document.querySelectorAll(".nav a");
 
-    navLinks.forEach(link => {
-      const href = link.getAttribute("href");
-
-      // Home page case
-      if ((currentPage === "" || currentPage === "index.html") && href === "./") {
-        link.classList.add("active");
-      }
-
-      // Other pages
-      if (href.includes(currentPage) && currentPage !== "") {
-        link.classList.add("active");
-      }
-    });
-  })();
-</script>
 </body>
 </html>
