@@ -1,75 +1,70 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>RSVP</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>RSVP</title>
 
-  <link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&family=EB+Garamond:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css" />
+<link rel="icon" type="image/png" href="./favicon.png">
+<link rel="apple-touch-icon" href="./favicon.png">
+
+<link href="https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&family=EB+Garamond:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./css/styles.css" />
 </head>
+
 <body>
 
 <header class="site-header">
-  <nav class="nav">
-    <a href="index.html">home</a>
-    <a href="our-story.html">our story</a>
-    <a href="events.html">schedule</a>
-    <a href="travel.html">getting here</a>
-    <a href="gifts.html">gifts</a>
-    <a href="photos.html">gallery</a>
-    <a href="faq.html">faq</a>
-    <a href="rsvp.html">rsvp</a>
-  </nav>
+<nav class="nav">
+<a href="./">home</a>
+<a href="./our-story.html">our story</a>
+<a href="./events.html">events</a>
+<a href="./travel.html">travel</a>
+<a href="./attire.html">attire</a>
+<a href="./gifts.html">gifts</a>
+<a href="./photos.html">gallery</a>
+<a href="./rsvp.html">rsvp</a>
+</nav>
 </header>
 
 <section class="page-banner">
-  <img src="images/images/banner.jpg" alt="Hannah and Cole" />
+<img src="images/images/banner.jpg" alt="">
 </section>
 
 <main>
 
 <section class="title-block">
-  <div class="container">
-    <h1>RSVP</h1>
-    <div class="date">Opening closer to the wedding</div>
-  </div>
+<div class="container">
+<h1>RSVP</h1>
+</div>
 </section>
 
 <section class="section">
-  <div class="container">
-    <div class="card">
-      <p>We will open our RSVP portal closer to the wedding date.</p>
-      <p>Thank you for your patience — we can’t wait to celebrate with you.</p>
-    </div>
-  </div>
+<div class="container">
+<div class="card">
+
+<p>
+Please RSVP at the link below.
+</p>
+
+<p style="margin-top: 20px;">
+<a href="https://www.aisleplanner.com/app/v2/our-wedding/hannahandcole/rsvp"
+   target="_blank"
+   class="registry-btn">
+   RSVP Here
+</a>
+</p>
+
+</div>
+</div>
 </section>
 
 </main>
 
-  <footer class="site-footer">
+<footer class="site-footer">
   <div class="footer-divider"></div>
   <img src="images/images/house-illustration.png" alt="">
 </footer>
-<script>
-  (function () {
-    const currentPage = window.location.pathname.split("/").pop();
-    const navLinks = document.querySelectorAll(".nav a");
 
-    navLinks.forEach(link => {
-      const href = link.getAttribute("href");
-
-      // Home page case
-      if ((currentPage === "" || currentPage === "index.html") && href === "./") {
-        link.classList.add("active");
-      }
-
-      // Other pages
-      if (href.includes(currentPage) && currentPage !== "") {
-        link.classList.add("active");
-      }
-    });
-  })();
-</script>
 </body>
 </html>
