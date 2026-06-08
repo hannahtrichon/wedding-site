@@ -359,3 +359,11 @@ main .section .container{
 .registry-btn:hover{
   opacity:.85;
 }
+
+.travel-page h3{
+  font-family: 'EB Garamond', serif;
+  font-weight: 600;
+  font-size: 20px;
+  letter-spacing: .04em;
+  margin: 28px 0 8px;
+}
