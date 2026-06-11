@@ -66,5 +66,25 @@ Please RSVP at the link below.
   <img src="images/images/house-illustration.png" alt="">
 </footer>
 
+<script>
+(function () {
+  const currentPage =
+    window.location.pathname.split("/").pop() || "index.html";
+
+  const navLinks = document.querySelectorAll(".nav a");
+
+  navLinks.forEach(link => {
+    const href = link.getAttribute("href");
+
+    if (
+      (currentPage === "index.html" && href === "./") ||
+      href === "./" + currentPage
+    ) {
+      link.classList.add("active");
+    }
+  });
+})();
+</script>
+
 </body>
 </html>
