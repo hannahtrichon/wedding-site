@@ -191,22 +191,23 @@ Delaware Canal Towpath
 </footer>
 
 <script>
-  (function () {
-    const currentPage = window.location.pathname.split("/").pop();
-    const navLinks = document.querySelectorAll(".nav a");
+(function () {
+  const currentPage =
+    window.location.pathname.split("/").pop() || "index.html";
 
-    navLinks.forEach(link => {
-      const href = link.getAttribute("href");
+  const navLinks = document.querySelectorAll(".nav a");
 
-      if ((currentPage === "" || currentPage === "index.html") && href === "./") {
-        link.classList.add("active");
-      }
+  navLinks.forEach(link => {
+    const href = link.getAttribute("href");
 
-      if (href.includes(currentPage) && currentPage !== "") {
-        link.classList.add("active");
-      }
-    });
-  })();
+    if (
+      (currentPage === "index.html" && href === "./") ||
+      href === "./" + currentPage
+    ) {
+      link.classList.add("active");
+    }
+  });
+})();
 </script>
 
 </body>
