@@ -45,8 +45,20 @@
 <h2>Friday — Welcome Reception</h2>
 <p>
 River House at Odette’s<br/>
-6:30 PM PM<br/>
+6:30 PM<br/>
 <em>Cocktail Attire</em>
+</p>
+
+<p style="font-size:16px; max-width:600px; margin:12px auto 0; font-style:italic; opacity:.8;">
+Complimentary off-site parking and shuttle service will be available for guests attending the Welcome Reception.
+<br><br>
+
+<strong>Parking Location</strong><br>
+385 W. Bridge Street<br>
+New Hope, PA 18938
+<br><br>
+
+Guests may park in the designated River House lot and enjoy complimentary shuttle transportation to and from the venue. Guests staying at River House at Odette’s do not need to utilize the off-site lot.
 </p>
 
 <div class="hr"></div>
@@ -74,12 +86,13 @@ The Stockton Inn<br/>
 </section>
 
 </main>
-  
-  <footer class="site-footer">
+
+<footer class="site-footer">
   <div class="footer-divider"></div>
   <img src="images/images/house-illustration.png" alt="">
 </footer>
-  <script>
+
+<script>
   (function () {
     const currentPage = window.location.pathname.split("/").pop();
     const navLinks = document.querySelectorAll(".nav a");
@@ -87,17 +100,16 @@ The Stockton Inn<br/>
     navLinks.forEach(link => {
       const href = link.getAttribute("href");
 
-      // Home page case
       if ((currentPage === "" || currentPage === "index.html") && href === "./") {
         link.classList.add("active");
       }
 
-      // Other pages
       if (href.includes(currentPage) && currentPage !== "") {
         link.classList.add("active");
       }
     });
   })();
 </script>
+
 </body>
 </html>
