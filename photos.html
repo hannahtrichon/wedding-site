@@ -1,3 +1,4 @@
+html
 <!doctype html>
 <html lang="en">
 <head>
@@ -69,29 +70,30 @@
 
 </main>
 
-  <footer class="site-footer">
+<footer class="site-footer">
   <div class="footer-divider"></div>
   <img src="images/images/house-illustration.png" alt="">
 </footer>
-  <script>
-  (function () {
-    const currentPage = window.location.pathname.split("/").pop();
-    const navLinks = document.querySelectorAll(".nav a");
 
-    navLinks.forEach(link => {
-      const href = link.getAttribute("href");
+<script>
+(function () {
+  const currentPage =
+    window.location.pathname.split("/").pop() || "index.html";
 
-      // Home page case
-      if ((currentPage === "" || currentPage === "index.html") && href === "./") {
-        link.classList.add("active");
-      }
+  const navLinks = document.querySelectorAll(".nav a");
 
-      // Other pages
-      if (href.includes(currentPage) && currentPage !== "") {
-        link.classList.add("active");
-      }
-    });
-  })();
+  navLinks.forEach(link => {
+    const href = link.getAttribute("href");
+
+    if (
+      (currentPage === "index.html" && href === "./") ||
+      href === "./" + currentPage
+    ) {
+      link.classList.add("active");
+    }
+  });
+})();
 </script>
+
 </body>
 </html>
