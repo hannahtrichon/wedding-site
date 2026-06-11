@@ -1,3 +1,4 @@
+```html
 <!doctype html>
 <html lang="en">
 <head>
@@ -46,7 +47,7 @@
 <p>
 We know many of you will be traveling to celebrate with us, and your presence truly means the most to us.
 Please do not feel any obligation to bring a gift. If you’d like to celebrate with one, we have registered at
-Crate & Barrel and Bloomingdale’s
+Crate & Barrel and Bloomingdale’s.
 </p>
 
 <div style="margin-top: 28px; line-height: 2;">
@@ -68,6 +69,7 @@ Link
 </a>
 </em>
 </p>
+
 </div>
 
 <p style="margin-top: 24px;">
@@ -92,5 +94,26 @@ Thank you for your generosity and for celebrating this milestone moment with us!
   <img src="images/images/house-illustration.png" alt="">
 </footer>
 
+<script>
+(function () {
+  const currentPage =
+    window.location.pathname.split("/").pop() || "index.html";
+
+  const navLinks = document.querySelectorAll(".nav a");
+
+  navLinks.forEach(link => {
+    const href = link.getAttribute("href");
+
+    if (
+      (currentPage === "index.html" && href === "./") ||
+      href === "./" + currentPage
+    ) {
+      link.classList.add("active");
+    }
+  });
+})();
+</script>
+
 </body>
 </html>
+```
