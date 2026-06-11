@@ -31,7 +31,6 @@
 <img src="images/images/banner.jpg" alt="">
 </section>
 
-<!-- IMPORTANT: home-page class prevents divider -->
 <main class="home-page">
 
 <section class="title-block">
@@ -49,38 +48,39 @@
 
 <p>
 Please explore our website for more wedding weekend details.
-We will continue to update this website as the date comes closer.
 We're so excited to celebrate with you!
 </p>
+
 </div>
 </div>
 </section>
 
 </main>
 
-     <footer class="site-footer">
+<footer class="site-footer">
   <div class="footer-divider"></div>
   <img src="images/images/house-illustration.png" alt="">
 </footer>
+
 <script>
-  (function () {
-    const currentPage = window.location.pathname.split("/").pop();
-    const navLinks = document.querySelectorAll(".nav a");
+(function () {
+  const currentPage =
+    window.location.pathname.split("/").pop() || "index.html";
 
-    navLinks.forEach(link => {
-      const href = link.getAttribute("href");
+  const navLinks = document.querySelectorAll(".nav a");
 
-      // Home page case
-      if ((currentPage === "" || currentPage === "index.html") && href === "./") {
-        link.classList.add("active");
-      }
+  navLinks.forEach(link => {
+    const href = link.getAttribute("href");
 
-      // Other pages
-      if (href.includes(currentPage) && currentPage !== "") {
-        link.classList.add("active");
-      }
-    });
-  })();
+    if (
+      (currentPage === "index.html" && href === "./") ||
+      href === "./" + currentPage
+    ) {
+      link.classList.add("active");
+    }
+  });
+})();
 </script>
+
 </body>
 </html>
