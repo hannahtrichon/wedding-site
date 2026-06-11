@@ -44,12 +44,12 @@
 <div class="card">
 
 <p>
-We are so excited to celebrate with you throughout the wedding weekend. For those wondering what to wear, please see below for some guidance. We want everyone to feel beautiful, comfortable, and festive.
+We are so excited to celebrate with you throughout the wedding weekend. For those wondering what to wear, please see below for some guidance.
 </p>
 
 <h2>Welcome Dinner</h2>
 <p>
-Cocktail attire. Think bright summer colors, fun patterns, dresses or skirts for women, and slacks with a dress shirt for men. Jackets are welcome but completely optional.
+Cocktail attire. Think long or short dresses for women. Think slacks with a dress shirt for men - jackets are welcome but completely optional.
 </p>
 
 <div class="hr"></div>
@@ -57,14 +57,13 @@ Cocktail attire. Think bright summer colors, fun patterns, dresses or skirts for
 <h2>Wedding Ceremony and Reception</h2>
 <p>
 Black tie attire. For the wedding day, we would love for guests to embrace a range of colors. For women, we suggest long dresses or gowns. For men, tuxedos are encouraged.
-
 </p>
 
 <div class="hr"></div>
 
 <h2>Farewell Brunch</h2>
 <p>
-Garden party attire. Think sundresses, skirts, or summer dresses for women, and pants with a linen or dress shirt for men.
+Garden party attire. Think summer dresses or skirts for women, and pants with a linen or dress shirt for men.
 </p>
 
 <div class="hr"></div>
@@ -83,6 +82,26 @@ Lastly, please do not feel boxed in by this guidance. Wear what makes you feel r
   <div class="footer-divider"></div>
   <img src="images/images/house-illustration.png" alt="">
 </footer>
+
+<script>
+(function () {
+  const currentPage =
+    window.location.pathname.split("/").pop() || "index.html";
+
+  const navLinks = document.querySelectorAll(".nav a");
+
+  navLinks.forEach(link => {
+    const href = link.getAttribute("href");
+
+    if (
+      (currentPage === "index.html" && href === "./") ||
+      href === "./" + currentPage
+    ) {
+      link.classList.add("active");
+    }
+  });
+})();
+</script>
 
 </body>
 </html>
