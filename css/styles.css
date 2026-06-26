@@ -367,3 +367,14 @@ main .section .container{
   letter-spacing: .04em;
   margin: 28px 0 8px;
 }
+
+/* ===== Berry Hyperlinks ===== */
+
+.card a{
+  color:#7B123F;
+  transition:color .2s ease;
+}
+
+.card a:hover{
+  color:#3F4A2A;
+}
