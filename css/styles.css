@@ -368,28 +368,25 @@ main .section .container{
   margin: 28px 0 8px;
 }
 
-/* ===== Berry Hyperlinks ===== */
-
-.card a{
-  color:#7B123F;
-  transition:color .2s ease;
-}
-
-.card a:hover{
-  color:#3F4A2A;
-}
-
-/* ===== Berry Content Links Override ===== */
+/* ===== Berry Content Links ===== */
 
 .card a,
+.card a:link,
 .card a:visited,
 .card em a,
+.card em a:link,
 .card em a:visited{
-  color:#7B123F !important;
+  color:#7B123F !important;   /* berry */
   text-decoration:none;
+  transition:color .2s ease;
 }
 
 .card a:hover,
 .card em a:hover{
-  color:#3F4A2A !important;
+  color:#3F4A2A !important;   /* olive */
+}
+
+.card a:active,
+.card em a:active{
+  color:#5E0F31 !important;   /* darker berry when clicked */
 }
