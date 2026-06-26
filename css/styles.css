@@ -378,3 +378,18 @@ main .section .container{
 .card a:hover{
   color:#3F4A2A;
 }
+
+/* ===== Berry Content Links Override ===== */
+
+.card a,
+.card a:visited,
+.card em a,
+.card em a:visited{
+  color:#7B123F !important;
+  text-decoration:none;
+}
+
+.card a:hover,
+.card em a:hover{
+  color:#3F4A2A !important;
+}
