@@ -390,3 +390,18 @@ main .section .container{
 .card em a:active{
   color:#5E0F31 !important;   /* darker berry when clicked */
 }
+
+/* RSVP / Action Buttons */
+
+.registry-btn,
+.registry-btn:link,
+.registry-btn:visited{
+  background:#3F4A2A !important;   /* olive green */
+  color:#FBF8F1 !important;        /* cream/white */
+  text-decoration:none !important;
+}
+
+.registry-btn:hover{
+  background:#7B123F !important;   /* berry on hover */
+  color:#FBF8F1 !important;
+}
