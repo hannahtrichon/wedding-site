@@ -1,13 +1,17 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>FAQ</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Good to Know</title>
 
-  <link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&family=EB+Garamond:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css" />
+<link rel="icon" type="image/png" href="./favicon.png">
+<link rel="apple-touch-icon" href="./favicon.png">
+
+<link href="https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&family=EB+Garamond:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css" />
 </head>
+
 <body>
 
 <header class="site-header">
@@ -19,69 +23,99 @@
 <a href="./attire.html">attire</a>
 <a href="./gifts.html">gifts</a>
 <a href="./photos.html">gallery</a>
+<a href="./faq.html">good to know</a>
 <a href="./rsvp.html">rsvp</a>
 </nav>
 </header>
 
 <section class="page-banner">
-  <img src="images/images/banner.jpg" alt="Hannah and Cole" />
+<img src="images/images/banner.jpg" alt="">
 </section>
 
 <main>
 
 <section class="title-block">
-  <div class="container">
-    <h1>FAQ</h1>
-  </div>
+<div class="container">
+<h1>Good to Know</h1>
+</div>
 </section>
 
 <section class="section">
-  <div class="container">
-    <div class="card">
+<div class="container">
+<div class="card">
 
-      <p>
-        We’ll be adding frequently asked questions here as the wedding weekend approaches.
-      </p>
+<h2>Can I bring a guest or my children?</h2>
 
-      <p>
-        Please check back soon for more details.
-      </p>
+<p>
+We absolutely adore all of your significant others and little ones! To help us accommodate everyone comfortably, we kindly ask that you please refer to your invitation or RSVP page for your invited guest list. If you have any questions, don't hesitate to reach out.
+</p>
 
-    </div>
-  </div>
+<div class="hr"></div>
+
+<h2>Is the wedding indoors or outdoors?</h2>
+
+<p>
+Our ceremony is planned to take place outdoors (weather permitting), while the reception will be a combination of indoor and outdoor spaces.
+</p>
+
+<div class="hr"></div>
+
+<h2>Will the ceremony be unplugged?</h2>
+
+<p>
+We kindly ask that phones and cameras remain tucked away during the ceremony so our photographer and videographer can capture the moment without distraction. We promise to share all of the beautiful photos afterward! Please feel free to take photos throughout the rest of the weekend—we'd love to see them.
+</p>
+
+<div class="hr"></div>
+
+<h2>What time should I arrive?</h2>
+
+<p>
+We recommend arriving approximately <strong>15 minutes before</strong> the start of each event to allow plenty of time to park, get settled, and find your seat.
+</p>
+
+<div class="hr"></div>
+
+<h2>Still have a question?</h2>
+
+<p>
+Please don't hesitate to reach out—we're always happy to help and want everyone to have a wonderful weekend celebrating with us.
+</p>
+
+</div>
+</div>
 </section>
 
 </main>
 
 <footer class="site-footer">
   <div class="footer-divider"></div>
-
   <img src="images/images/house-illustration.png" alt="">
 
   <p class="signature">
     Designed &amp; coded with ♡ by Hannah
   </p>
 </footer>
-  
+
 <script>
-  (function () {
-    const currentPage = window.location.pathname.split("/").pop();
-    const navLinks = document.querySelectorAll(".nav a");
+(function () {
+  const currentPage =
+    window.location.pathname.split("/").pop() || "index.html";
 
-    navLinks.forEach(link => {
-      const href = link.getAttribute("href");
+  const navLinks = document.querySelectorAll(".nav a");
 
-      // Home page case
-      if ((currentPage === "" || currentPage === "index.html") && href === "./") {
-        link.classList.add("active");
-      }
+  navLinks.forEach(link => {
+    const href = link.getAttribute("href");
 
-      // Other pages
-      if (href.includes(currentPage) && currentPage !== "") {
-        link.classList.add("active");
-      }
-    });
-  })();
+    if (
+      (currentPage === "index.html" && href === "./") ||
+      href === "./" + currentPage
+    ) {
+      link.classList.add("active");
+    }
+  });
+})();
 </script>
+
 </body>
 </html>
