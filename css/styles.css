@@ -405,3 +405,15 @@ main .section .container{
   background:#7B123F !important;   /* berry on hover */
   color:#FBF8F1 !important;
 }
+
+/* ===== Hannah signature ===== */
+
+.signature{
+  margin-top: 12px;
+  margin-bottom: 0;
+  font-family: 'EB Garamond', serif;
+  font-size: 12px;
+  letter-spacing: .08em;
+  color: rgba(43,43,43,.55);
+  font-style: italic;
+}
