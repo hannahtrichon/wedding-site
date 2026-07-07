@@ -412,18 +412,30 @@ main .section .container{
 
 /* RSVP / Action Buttons */
 
+/* RSVP Button */
+
 .card .registry-btn,
 .card .registry-btn:link,
 .card .registry-btn:visited{
   display:inline-block;
-  padding:10px 24px;
+  padding:14px 40px;
   background:#3F4A2A !important;
   color:#FBF8F1 !important;
   text-decoration:none !important;
-  border-radius:4px;
-  transition:all .2s ease;
+
+  border-radius:0;
+
+  font-size:14px;
+  text-transform:uppercase;
+  letter-spacing:.18em;
+
+  transition:all .25s ease;
 }
 
+.card .registry-btn:hover{
+  background:#7B123F !important;
+  color:#FBF8F1 !important;
+}
 .card .registry-btn:hover{
   background:#7B123F !important;
   color:#FBF8F1 !important;
