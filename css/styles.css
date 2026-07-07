@@ -439,3 +439,24 @@ main .section .container{
     transform: none !important;
   }
 }
+
+/* ===== Strong mobile banner override ===== */
+
+@media only screen and (max-width: 700px){
+  .page-banner{
+    height: 180px !important;
+    max-height: 180px !important;
+    overflow: hidden !important;
+    position: relative !important;
+  }
+
+  .page-banner img{
+    width: 100% !important;
+    height: 100% !important;
+    max-width: none !important;
+    object-fit: cover !important;
+    object-position: center center !important;
+    transform: none !important;
+    display: block !important;
+  }
+}
