@@ -459,23 +459,30 @@ main .section .container{
   }
 }
 
-/* ===== Strong mobile banner override ===== */
+/* ===== Mobile nav fix ===== */
 
-@media only screen and (max-width: 700px){
-  .page-banner{
-    height: 180px !important;
-    max-height: 180px !important;
-    overflow: hidden !important;
-    position: relative !important;
+@media (max-width: 700px){
+  .site-header{
+    position: static;
   }
 
-  .page-banner img{
-    width: 100% !important;
-    height: 100% !important;
-    max-width: none !important;
-    object-fit: cover !important;
-    object-position: center center !important;
-    transform: none !important;
-    display: block !important;
+  .nav{
+    gap: 8px 12px;
+    padding: 12px 8px;
+    line-height: 1.2;
+  }
+
+  .nav a{
+    font-size: 12px;
+    letter-spacing: .08em;
+    padding: 4px 3px;
+    white-space: nowrap;
+  }
+
+  .nav a.active::before{
+    left: -3px;
+    right: -3px;
+    bottom: 1px;
+    height: 70%;
   }
 }
