@@ -668,3 +668,12 @@ main .section .container{
 .travel-list-clean{
   text-align:left;
 }
+
+/* Boutique hotel list */
+
+.travel-boutique{
+  max-width: 520px;
+  margin: 16px auto 0;
+  text-align: center;
+  line-height: 1.9;
+}
