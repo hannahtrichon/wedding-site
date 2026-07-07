@@ -665,12 +665,6 @@ main .section .container{
   line-height:1.6;
 }
 
-.travel-list-clean li::before{
-  content:"•";
-  color:#3F4A2A;
-  margin-right:10px;
-}
-
 .travel-list-clean{
   text-align:left;
 }
