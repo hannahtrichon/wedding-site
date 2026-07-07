@@ -490,7 +490,7 @@ main .section .container{
   padding: 42px 34px;
   border: 2px solid #3F4A2A;
   border-radius: 0;
-  background: transparent;
+  background: #FBF8F1;
 }
 
 .event-block p{
