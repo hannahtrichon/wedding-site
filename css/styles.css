@@ -459,30 +459,29 @@ main .section .container{
   }
 }
 
-/* ===== Mobile nav fix ===== */
+/* ===== Event page polish ===== */
 
-@media (max-width: 700px){
-  .site-header{
-    position: static;
-  }
+.event-block{
+  max-width: 760px;
+  margin: 34px auto;
+  padding: 28px 22px;
+  border: 1px solid rgba(63,74,42,.22);
+  background: rgba(255,255,255,.18);
+}
 
-  .nav{
-    gap: 8px 12px;
-    padding: 12px 8px;
-    line-height: 1.2;
-  }
+.event-date{
+  font-size: 14px;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+  opacity: .75;
+}
 
-  .nav a{
-    font-size: 12px;
-    letter-spacing: .08em;
-    padding: 4px 3px;
-    white-space: nowrap;
-  }
+.event-block h2{
+  color: #3F4A2A;
+  margin-top: 0 !important;
+}
 
-  .nav a.active::before{
-    left: -3px;
-    right: -3px;
-    bottom: 1px;
-    height: 70%;
-  }
+.event-block h3{
+  margin-top: 22px;
 }
