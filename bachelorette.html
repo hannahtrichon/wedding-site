@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-background scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hannah's Bachelorette · Sint Maarten</title>
+    <meta
+      name="description"
+      content="Hannah's Bachelorette — a luxury girls' getaway in Sint Maarten, July 29 – August 2, 2026."
+    />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Tailwind (Play CDN — no build step needed) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              background: "#f7f4ee",
+              foreground: "#484339",
+              card: "#fbfaf5",
+              "card-foreground": "#484339",
+              primary: "#3f6d99",
+              "primary-foreground": "#faf8f2",
+              secondary: "#ece5d7",
+              "secondary-foreground": "#4b463b",
+              muted: "#ece7db",
+              "muted-foreground": "#847d6d",
+              border: "#ded7c8",
+              gold: "#b08a4f",
+              seaglass: "#a6cabf",
+              ocean: "#3f6d99",
+              champagne: "#ecdfca",
+              sand: "#e6dcc6",
+            },
+            fontFamily: {
+              serif: ['"Cormorant Garamond"', "Georgia", "serif"],
+              sans: ["Jost", "ui-sans-serif", "system-ui", "sans-serif"],
+            },
+            letterSpacing: { editorial: "0.28em" },
+            borderRadius: { "3xl": "1.75rem" },
+          },
+        },
+      };
+    </script>
+    <style>
+      body {
+        background: #f7f4ee;
+        color: #484339;
+        font-family: Jost, ui-sans-serif, system-ui, sans-serif;
+        -webkit-font-smoothing: antialiased;
+      }
+      .font-serif {
+        font-family: "Cormorant Garamond", Georgia, serif;
+      }
+      .tracking-editorial {
+        letter-spacing: 0.28em;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
+
+  <body class="bg-background text-foreground">
+    <!-- ===================== NAV ===================== -->
+    <header
+      class="sticky top-0 z-50 border-b border-border/60 bg-background/85 backdrop-blur"
+    >
+      <nav
+        class="mx-auto flex max-w-6xl items-center justify-between px-5 py-4"
+      >
+        <a href="#top" class="font-serif text-xl italic text-foreground"
+          >Hannah&apos;s Bachelorette</a
+        >
+        <div class="hidden flex-wrap items-center gap-5 lg:flex">
+          <a href="#overview" class="text-sm text-muted-foreground hover:text-foreground">Overview</a>
+          <a href="#girls" class="text-sm text-muted-foreground hover:text-foreground">The Girls</a>
+          <a href="#rooms" class="text-sm text-muted-foreground hover:text-foreground">Rooms</a>
+          <a href="#itinerary" class="text-sm text-muted-foreground hover:text-foreground">Itinerary</a>
+          <a href="#experiences" class="text-sm text-muted-foreground hover:text-foreground">Experiences</a>
+          <a href="#dining" class="text-sm text-muted-foreground hover:text-foreground">Dining</a>
+          <a href="#attire" class="text-sm text-muted-foreground hover:text-foreground">Attire</a>
+          <a href="#packing" class="text-sm text-muted-foreground hover:text-foreground">Packing</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="bg-background">
+      <!-- ===================== HERO ===================== -->
+      <section
+        id="top"
+        class="relative flex min-h-[92vh] items-center justify-center overflow-hidden"
+      >
+        <div class="absolute inset-0">
+          <img
+            src="images/hero-coast.png"
+            alt="Turquoise Caribbean coastline with palm trees at golden hour in Sint Maarten"
+            class="size-full object-cover"
+          />
+          <div
+            class="absolute inset-0"
+            style="
+              background: linear-gradient(
+                to bottom,
+                rgba(0, 0, 0, 0.4),
+                rgba(0, 0, 0, 0.15),
+                rgba(0, 0, 0, 0.55)
+              );
+            "
+          ></div>
+        </div>
+        <div
+          class="relative z-10 flex flex-col items-center px-6 text-center text-white"
+        >
+          <span
+            class="font-sans text-xs font-medium uppercase tracking-editorial text-white/85"
+            >Sint Maarten</span
+          >
+          <h1
+            class="mt-5 font-serif text-6xl font-medium leading-[0.95] sm:text-7xl md:text-8xl"
+          >
+            Hannah&apos;s<br />Bachelorette
+          </h1>
+          <div class="mt-7 flex flex-col items-center gap-3">
+            <div class="h-px w-16 bg-white/50"></div>
+            <p class="font-sans text-sm uppercase tracking-[0.18em] text-white/90">
+              July 29 – August 2, 2026
+            </p>
+            <p class="font-serif text-xl italic text-white/90">
+              A luxury girls&apos; getaway.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================== OVERVIEW ===================== -->
+      <section id="overview" class="mx-auto max-w-6xl px-5 py-24 md:py-32">
+        <div class="mx-auto flex max-w-2xl flex-col items-center gap-4 text-center">
+          <span class="font-sans text-xs font-medium uppercase tracking-editorial text-gold"
+            >Weekend Overview</span
+          >
+          <h2 class="font-serif text-4xl font-medium leading-[1.05] sm:text-5xl md:text-6xl">
+            Five days on the sand
+          </h2>
+          <p class="font-sans text-base leading-relaxed text-muted-foreground">
+            A private villa, a rotating cast of fourteen, and a slow, sun-drenched
+            itinerary designed to feel like a magazine spread.
+          </p>
+        </div>
+
+        <div class="mt-16 grid gap-6 md:grid-cols-5">
+          <div class="md:col-span-2">
+            <div
+              class="flex h-full flex-col justify-between gap-8 rounded-3xl border border-border bg-card p-8"
+            >
+              <div class="flex flex-col gap-6">
+                <div class="flex items-center gap-2 text-gold">
+                  <i data-lucide="map-pin" class="size-4"></i>
+                  <span class="font-sans text-xs font-medium uppercase tracking-[0.16em]"
+                    >Destination</span
+                  >
+                </div>
+                <p class="font-serif text-4xl leading-tight">Sint Maarten</p>
+              </div>
+              <div class="grid grid-cols-2 gap-6 border-t border-border pt-8">
+                <div class="flex flex-col gap-1">
+                  <span class="font-serif text-3xl">7</span>
+                  <span class="font-sans text-xs uppercase tracking-[0.14em] text-muted-foreground">Bedrooms</span>
+                </div>
+                <div class="flex flex-col gap-1">
+                  <span class="font-serif text-3xl">6.5</span>
+                  <span class="font-sans text-xs uppercase tracking-[0.14em] text-muted-foreground">Bathrooms</span>
+                </div>
+                <div class="flex flex-col gap-1">
+                  <span class="font-serif text-3xl">14</span>
+                  <span class="font-sans text-xs uppercase tracking-[0.14em] text-muted-foreground">Guests</span>
+                </div>
+                <div class="flex flex-col gap-1">
+                  <span class="font-serif text-3xl">4</span>
+                  <span class="font-sans text-xs uppercase tracking-[0.14em] text-muted-foreground">Nights</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="md:col-span-3">
+            <div
+              class="group flex h-full flex-col overflow-hidden rounded-3xl border border-border bg-card"
+            >
+              <div class="relative aspect-[16/10] overflow-hidden">
+                <img
+                  src="images/villa.png"
+                  alt="White luxury villa with infinity pool in Les Terres Basses, Sint Maarten"
+                  class="size-full object-cover transition-transform duration-700 group-hover:scale-105"
+                />
+                <div
+                  class="absolute left-4 top-4 flex items-center gap-1 rounded-full bg-background/85 px-3 py-1 backdrop-blur"
+                >
+                  <i data-lucide="star" class="size-3" style="fill: #b08a4f; color: #b08a4f"></i>
+                  <i data-lucide="star" class="size-3" style="fill: #b08a4f; color: #b08a4f"></i>
+                  <i data-lucide="star" class="size-3" style="fill: #b08a4f; color: #b08a4f"></i>
+                  <i data-lucide="star" class="size-3" style="fill: #b08a4f; color: #b08a4f"></i>
+                  <i data-lucide="star" class="size-3" style="fill: #b08a4f; color: #b08a4f"></i>
+                </div>
+              </div>
+              <div class="flex flex-1 flex-col gap-4 p-8">
+                <div>
+                  <span class="font-sans text-xs font-medium uppercase tracking-[0.16em] text-gold"
+                    >Where we stay</span
+                  >
+                  <h3 class="mt-2 font-serif text-3xl">Villa in Les Terres Basses</h3>
+                </div>
+                <p class="font-sans text-sm leading-relaxed text-muted-foreground">
+                  Seven bedrooms and six and a half baths tucked into the exclusive
+                  gated peninsula of Les Terres Basses, steps from the water.
+                </p>
+                <a
+                  href="https://www.airbnb.com/rooms/20472240?viralityEntryPoint=1&s=76"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="mt-auto inline-flex w-fit items-center gap-2 rounded-full bg-primary px-6 py-3 font-sans text-sm font-medium text-primary-foreground transition-opacity hover:opacity-90"
+                >
+                  View the villa
+                  <i data-lucide="arrow-up-right" class="size-4"></i>
+                </a>
+                <span class="font-sans text-xs text-muted-foreground">
+                  Villa listing: airbnb.com/rooms/20472240
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================== GIRLS ===================== -->
+      <section id="girls" class="bg-secondary/50 py-24 md:py-32">
+        <div class="mx-auto max-w-6xl px-5">
+          <div class="mx-auto flex max-w-2xl flex-col items-center gap-4 text-center">
+            <span class="font-sans text-xs font-medium uppercase tracking-editorial text-gold"
+              >The Guest List</span
+            >
+            <h2 class="font-serif text-4xl font-medium leading-[1.05] sm:text-5xl md:text-6xl">
+              The girls
+            </h2>
+            <p class="font-sans text-base leading-relaxed text-muted-foreground">&lt;333333</p>
+          </div>
+
+          <div
+            class="mt-16 grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7"
+            id="girls-grid"
+          ></div>
+        </div>
+      </section>
+
+      <!-- ===================== ROOMS ===================== -->
+      <section id="rooms" class="mx-auto max-w-6xl px-5 py-24 md:py-32">
+        <div class="mx-auto flex max-w-2xl flex-col items-center gap-4 text-center">
+          <span class="font-sans text-xs font-medium uppercase tracking-editorial text-gold"
+            >Room Assignments</span
+          >
+          <h2 class="font-serif text-4xl font-medium leading-[1.05] sm:text-5xl md:text-6xl">
+            Who&apos;s where
+          </h2>
+          <p class="font-sans text-base leading-relaxed text-muted-foreground">
+            Seven suites, sorted. Find your name and your roommate(s) below.
+          </p>
+        </div>
+        <div
+          class="mt-16 grid gap-4 sm:grid-cols-2 lg:grid-cols-3"
+          id="rooms-grid"
+        ></div>
+      </section>
+
+      <!-- ===================== ITINERARY ===================== -->
+      <section id="itinerary" class="bg-secondary/50 py-24 md:py-32">
+        <div class="mx-auto max-w-4xl px-5">
+          <div class="mx-auto flex max-w-2xl flex-col items-center gap-4 text-center">
+            <span class="font-sans text-xs font-medium uppercase tracking-editorial text-gold"
+              >Weekend Itinerary</span
+            >
+            <h2 class="font-serif text-4xl font-medium leading-[1.05] sm:text-5xl md:text-6xl">
+              Day by day
+            </h2>
+            <p class="font-sans text-base leading-relaxed text-muted-foreground">
+              A loose, sun-led rhythm — mornings for movement, afternoons for the
+              sea, evenings for long dinners.
+            </p>
+          </div>
+          <div class="mt-16 flex flex-col gap-10" id="itinerary-list"></div>
+        </div>
+      </section>
+
+      <!-- ===================== EXPERIENCES ===================== -->
+      <section id="experiences" class="mx-auto max-w-6xl px-5 py-24 md:py-32">
+        <div class="mx-auto flex max-w-2xl flex-col items-center gap-4 text-center">
+          <span class="font-sans text-xs font-medium uppercase tracking-editorial text-gold"
+            >Featured Experiences</span
+          >
+          <h2 class="font-serif text-4xl font-medium leading-[1.05] sm:text-5xl md:text-6xl">
+            The moments
+          </h2>
+          <p class="font-sans text-base leading-relaxed text-muted-foreground">
+            Two anchors of the weekend — a day at sea and a private chef every
+            morning and every night.
+          </p>
+        </div>
+
+        <div class="mt-16 grid gap-6 md:grid-cols-2">
+          <!-- Catamaran -->
+          <div
+            class="group relative flex min-h-[420px] flex-col justify-end overflow-hidden rounded-3xl border border-border"
+          >
+            <img
+              src="images/catamaran.png"
+              alt="White catamaran sailing on turquoise Caribbean water"
+              class="absolute inset-0 size-full object-cover transition-transform duration-700 group-hover:scale-105"
+            />
+            <div
+              class="absolute inset-0"
+              style="
+                background: linear-gradient(
+                  to top,
+                  rgba(0, 0, 0, 0.75),
+                  rgba(0, 0, 0, 0.25),
+                  transparent
+                );
+              "
+            ></div>
+            <div class="relative z-10 flex flex-col gap-3 p-8 text-white">
+              <i data-lucide="sailboat" class="size-6 text-white/90"></i>
+              <div class="font-sans text-xs uppercase tracking-[0.16em] text-white/80">
+                Friday · 1–5 PM
+              </div>
+              <h3 class="font-serif text-4xl">Private Catamaran</h3>
+              <p class="font-sans text-sm text-white/85">
+                CaptainJo Boat Charter — SailCat 60
+              </p>
+              <a
+                href="https://captainjoboatcharter.com/sailcat60/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="mt-2 inline-flex w-fit items-center gap-2 rounded-full bg-white/95 px-5 py-2.5 font-sans text-sm font-medium text-foreground transition-opacity hover:opacity-90"
+              >
+                View the charter
+                <i data-lucide="arrow-up-right" class="size-4"></i>
+              </a>
+              <span class="font-sans text-xs text-white/80">
+                Charter booking: captainjoboatcharter.com/sailcat60
+              </span>
+            </div>
+          </div>
+
+          <!-- Chef -->
+          <div
+            class="group relative flex min-h-[420px] flex-col justify-between gap-6 overflow-hidden rounded-3xl border border-border p-8 text-white"
+          >
+            <img
+              src="images/fruit-platter.png"
+              alt="Lavish tropical exotic fruit platter of mango, dragon fruit, passionfruit and berries"
+              class="absolute inset-0 size-full object-cover transition-transform duration-700 group-hover:scale-105"
+            />
+            <div
+              class="absolute inset-0"
+              style="
+                background: linear-gradient(
+                  to top,
+                  rgba(0, 0, 0, 0.8),
+                  rgba(0, 0, 0, 0.45),
+                  rgba(0, 0, 0, 0.25)
+                );
+              "
+            ></div>
+            <i data-lucide="chef-hat" class="relative z-10 size-7"></i>
+            <div class="relative z-10 flex flex-col gap-3">
+              <span class="font-sans text-xs uppercase tracking-[0.16em] text-white/75"
+                >In-Villa Dining</span
+              >
+              <h3 class="font-serif text-4xl">Private Chef</h3>
+              <p class="font-serif text-2xl italic text-white/90">Chef Mallory</p>
+              <p class="font-sans text-sm leading-relaxed text-white/85">
+                Brunch and dinner prepared in the villa daily - from a Caribbean
+                welcome feast to a final farewell breakfast. Full menu below.
+              </p>
+            </div>
+            <a
+              href="#dining"
+              class="relative z-10 inline-flex w-fit items-center gap-2 rounded-full border border-white/40 px-5 py-2.5 font-sans text-sm font-medium transition-colors hover:bg-white/10"
+              >See the menu</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================== DINING ===================== -->
+      <section id="dining" class="relative overflow-hidden py-24 md:py-32">
+        <div class="absolute inset-0">
+          <img
+            src="images/dining.png"
+            alt="Styled alfresco dinner table on a coastal terrace at golden hour"
+            class="size-full object-cover"
+          />
+          <div class="absolute inset-0" style="background: rgba(247, 244, 238, 0.92)"></div>
+        </div>
+        <div class="relative z-10 mx-auto max-w-5xl px-5">
+          <div class="mx-auto flex max-w-2xl flex-col items-center gap-4 text-center">
+            <span class="font-sans text-xs font-medium uppercase tracking-editorial text-gold"
+              >Menu by Chef Mallory</span
+            >
+            <h2 class="font-serif text-4xl font-medium leading-[1.05] sm:text-5xl md:text-6xl">
+              The table
+            </h2>
+            <p class="font-sans text-base leading-relaxed text-muted-foreground">
+              A private chef will prepare our meals in the villa — here&apos;s
+              what&apos;s cooking, day by day. (Options will be available for our
+              vegetarian ladies!!!!)
+            </p>
+          </div>
+          <div
+            class="mt-16 grid gap-5 sm:grid-cols-2 lg:grid-cols-3"
+            id="dining-grid"
+          ></div>
+        </div>
+      </section>
+
+      <!-- ===================== ATTIRE ===================== -->
+      <section id="attire" class="mx-auto max-w-6xl px-5 py-24 md:py-32">
+        <div class="mx-auto flex max-w-2xl flex-col items-center gap-4 text-center">
+          <span class="font-sans text-xs font-medium uppercase tracking-editorial text-gold"
+            >Attire Guidance</span
+          >
+          <h2 class="font-serif text-4xl font-medium leading-[1.05] sm:text-5xl md:text-6xl">
+            What to wear
+          </h2>
+          <p class="font-sans text-base leading-relaxed text-muted-foreground">
+            Resort wear style with no strict themes. See below for a mood board for
+            each night, rated one to four on the fancy scale (hopefully this helps
+            with packing!!!). PS This is made mostly by AI so don&apos;t worry about
+            following this to a T lol
+          </p>
+        </div>
+        <div class="mt-20 flex flex-col gap-24 md:gap-32" id="attire-list"></div>
+      </section>
+
+      <!-- ===================== PACKING ===================== -->
+      <section id="packing" class="bg-secondary/50 py-24 md:py-32">
+        <div class="mx-auto max-w-6xl px-5">
+          <div class="mx-auto flex max-w-2xl flex-col items-center gap-4 text-center">
+            <span class="font-sans text-xs font-medium uppercase tracking-editorial text-gold"
+              >Packing Guide</span
+            >
+            <h2 class="font-serif text-4xl font-medium leading-[1.05] sm:text-5xl md:text-6xl">
+              Packing Guidance
+            </h2>
+            <p class="font-sans text-base leading-relaxed text-muted-foreground">
+              Basic list to help pack!
+            </p>
+          </div>
+          <div
+            class="mt-16 grid gap-4 sm:grid-cols-2 lg:grid-cols-3"
+            id="packing-grid"
+          ></div>
+        </div>
+      </section>
+
+      <!-- ===================== FOOTER ===================== -->
+      <footer class="bg-ocean py-16 text-primary-foreground">
+        <div class="mx-auto flex max-w-6xl flex-col items-center gap-4 px-5 text-center">
+          <span class="font-sans text-xs uppercase tracking-editorial text-primary-foreground/70"
+            >Sint Maarten · July 29 – August 2, 2026</span
+          >
+          <p class="font-serif text-4xl italic sm:text-5xl">Hannah&apos;s Bachelorette</p>
+          <p class="max-w-md font-sans text-sm text-primary-foreground/80">
+            Can&apos;t wait!!!!!!!
+          </p>
+        </div>
+      </footer>
+    </main>
+
+    <!-- Lucide icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Content data + rendering -->
+    <script>
+      const girls = [
+        { name: "Hannah", photo: "girls/hannah.jpeg" },
+        { name: "Anika", photo: "girls/anika.png" },
+        { name: "Becca", photo: "girls/becca.png" },
+        { name: "Leah", photo: "girls/leah.png" },
+        { name: "Lexa", photo: "girls/lexa.png" },
+        { name: "Amita", photo: "girls/amita.png" },
+        { name: "Srishti", photo: "girls/srishti.png" },
+        { name: "Dione", photo: "girls/dione.png" },
+        { name: "Margot", photo: "girls/margot.png" },
+        { name: "Jordann", photo: "girls/jordann.png" },
+        { name: "Lydia", photo: "girls/lydia.png" },
+        { name: "Megan", photo: "girls/megan.png" },
+        { name: "Jessie", photo: "girls/jessie.png" },
+        { name: "Wera", photo: "girls/wera.png" },
+      ];
+
+      const rooms = [
+        { room: "Room 1", guests: ["Hannah", "Anika"] },
+        { room: "Room 2", guests: ["Srishti", "Amita", "Lexa"] },
+        { room: "Room 3", guests: ["Wera", "Jessie"] },
+        { room: "Room 4", guests: ["Dione", "Margot"] },
+        { room: "Room 5", guests: ["Jordann", "Lydia"] },
+        { room: "Room 6", guests: ["Becca", "Leah"] },
+        { room: "Room 7", guests: ["Megan"] },
+      ];
+
+      const itinerary = [
+        {
+          day: "Wednesday",
+          date: "July 29",
+          title: "Arrival Day",
+          events: [
+            { time: "3 PM", title: "Arrive SXM" },
+            { time: "5 PM", title: "Caribbean Welcome Dinner" },
+            { time: "7–8 PM", title: "Sunset Beach Walk" },
+          ],
+        },
+        {
+          day: "Thursday",
+          date: "July 30",
+          title: "First Full Day",
+          events: [
+            { time: "Morning", title: "Yoga · Pickleball · Beach Walk" },
+            { time: "11 AM", title: "Brunch" },
+            { time: "12–7 PM", title: "Beach Day", details: ["Explore Marigot Marina & Boutiques"] },
+            { time: "7 PM", title: "Seafood Dinner" },
+          ],
+        },
+        {
+          day: "Friday",
+          date: "July 31",
+          title: "On The Water",
+          events: [
+            { time: "10 AM", title: "Breakfast" },
+            { time: "11 AM–1 PM", title: "Yoga or Pickleball" },
+            { time: "1–5 PM", title: "Private Catamaran Charter", details: ["Cheese boards & fresh fruit"] },
+            { time: "7 PM", title: "Mediterranean Dinner" },
+          ],
+        },
+        {
+          day: "Saturday",
+          date: "August 1",
+          title: "The Fancy One",
+          events: [
+            { time: "9:30–11 AM", title: "Pickleball" },
+            { time: "11 AM", title: "Brunch" },
+            { time: "Afternoon", title: "Beach", details: ["Lunch or shopping in Marigot"] },
+            { time: "7 PM", title: "BBQ Dinner" },
+          ],
+        },
+        {
+          day: "Sunday",
+          date: "August 2",
+          title: "Departure",
+          events: [
+            { time: "9 AM", title: "Breakfast" },
+            { time: "1:35 PM", title: "Flights Home" },
+          ],
+        },
+      ];
+
+      const dining = [
+        { day: "Wednesday", courses: [{ label: "Dinner", heading: "Caribbean Dinner" }] },
+        {
+          day: "Thursday",
+          courses: [
+            { label: "Breakfast", heading: "Morning Spread", items: ["Crepes", "Fruit platter", "Potato & cheese omelette", "Avocado toast"] },
+            { label: "Dinner", heading: "Seafood Night" },
+          ],
+        },
+        {
+          day: "Friday",
+          courses: [
+            { label: "Breakfast", heading: "Morning Spread", items: ["French toast", "Fruit platter", "Avocado toast", "Mimosa eggs"] },
+            { label: "Dinner", heading: "Mediterranean" },
+          ],
+        },
+        {
+          day: "Saturday",
+          courses: [
+            { label: "Breakfast", heading: "Morning Spread", items: ["Crepes", "Fruit platter", "Avocado toast", "Croque Monsieur"] },
+            { label: "Dinner", heading: "BBQ" },
+          ],
+        },
+        {
+          day: "Sunday",
+          courses: [
+            { label: "Breakfast", heading: "Morning Spread", items: ["Yogurt & granola", "Fruit platter", "Smoked salmon toast", "Breakfast wraps"] },
+          ],
+        },
+      ];
+
+      const attire = [
+        {
+          night: "Night 1", date: "Wed · July 29", occasion: "Arrival Night", fancy: 1, vibe: "Boho / Casual",
+          keyPieces: ["Flowy printed maxi", "Crochet or linen mini", "Woven flat sandals"],
+          notes: "Relaxed and breezy — flowy maxis, a crochet or linen moment, and playful prints.",
+          image: "attire/night-1-v3.jpg", alt: "Night 1 arrival attire mood board — boho and casual maxi dresses in warm earth tones",
+        },
+        {
+          night: "Night 2", date: "Thu · July 30", occasion: "Seafood Night", fancy: 3, vibe: "Coastal Chic",
+          keyPieces: ["Satin midi", "Cut-out or column silhouette", "Strappy heel or sleek flat"],
+          notes: "Satin midis, cute prints, etc. Think dinner-out polish with a barefoot-luxury edge.",
+          image: "attire/night-2-v2.jpg", alt: "Night 2 attire mood board — coastal chic satin dresses in sea glass and ocean blue",
+        },
+        {
+          night: "Night 3", date: "Fri · July 31", occasion: "Mediterranean Post-Boat Dinner", fancy: 2, vibe: "Elevated Ease",
+          keyPieces: ["Halter slip or shift", "Soft painterly print", "Barely-there heeled sandal"],
+          notes: "A step up from casual but still soft — slip and shift silhouettes, halter necklines, and gentle prints. Golden-hour after a day on the water.",
+          image: "attire/night-3-v2.jpg", alt: "Night 3 attire mood board — elevated casual dresses in buttery neutrals and chartreuse",
+        },
+        {
+          night: "Night 4", date: "Sat · August 1", occasion: "BBQ Party", fancy: 4, vibe: "Full Glam",
+          keyPieces: ["Silk maxi dresses", "Cute jewelry", "Statement shoes"],
+          notes: "Last night big night!!! Party dresses!",
+          image: "attire/night-4-v2.jpg", alt: "Night 4 attire mood board — glamorous silk and satin gowns in bold colors",
+        },
+      ];
+
+      const packingCategories = [
+        { title: "Clothing", items: ["Sundresses", "Cover-ups", "One elevated dinner look", "Linen sets"] },
+        { title: "Swimwear", items: ["2–3 swimsuits", "Sarong", "Sun hat"] },
+        { title: "Shoes", items: ["Sandals", "Sneakers for pickleball", "One heel"] },
+        { title: "Accessories", items: ["Jewelry", "Sunglasses", "Beach bags", "Beach games"] },
+        { title: "Beauty", items: ["SPF everything", "After-sun", "Travel skincare", "Bug spray"] },
+        { title: "Beach Essentials", items: ["Reef-safe sunscreen", "Waterproof phone pouch", "Refillable bottle"] },
+      ];
+
+      const esc = (s) =>
+        String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+
+      // Girls
+      document.getElementById("girls-grid").innerHTML = girls
+        .map(
+          (g) => `
+        <div class="group flex flex-col items-center gap-4 rounded-3xl border border-border bg-card p-6 text-center transition-colors hover:border-gold/60">
+          <img src="${g.photo}" alt="${esc(g.name)} on the trip" class="size-16 rounded-full object-cover object-top ring-2 ring-champagne transition-all group-hover:ring-seaglass" />
+          <span class="font-serif text-xl">${esc(g.name)}</span>
+        </div>`
+        )
+        .join("");
+
+      // Rooms
+      document.getElementById("rooms-grid").innerHTML = rooms
+        .map(
+          (r) => `
+        <div class="flex h-full flex-col gap-5 rounded-3xl border border-border bg-card p-7">
+          <div class="flex items-center justify-between">
+            <span class="font-serif text-2xl">${esc(r.room)}</span>
+            <i data-lucide="bed-double" class="size-5 text-gold"></i>
+          </div>
+          <div class="flex flex-wrap gap-2">
+            ${r.guests
+              .map(
+                (g) =>
+                  `<span class="rounded-full bg-secondary px-3 py-1 font-sans text-sm text-secondary-foreground">${esc(g)}</span>`
+              )
+              .join("")}
+          </div>
+        </div>`
+        )
+        .join("");
+
+      // Itinerary
+      document.getElementById("itinerary-list").innerHTML = itinerary
+        .map(
+          (day) => `
+        <div class="flex flex-col gap-4">
+          <div>
+            <span class="font-sans text-xs font-medium uppercase tracking-[0.16em] text-gold">${esc(day.day)} · ${esc(day.date)}</span>
+            <h3 class="mt-1 font-serif text-3xl">${esc(day.title)}</h3>
+          </div>
+          <div class="flex flex-col gap-3 rounded-3xl border border-border bg-card p-6">
+            ${day.events
+              .map(
+                (e) => `
+              <div class="flex flex-col gap-1 border-b border-border/60 pb-3 last:border-0 last:pb-0">
+                <div class="flex items-baseline gap-3">
+                  <span class="min-w-[72px] font-sans text-xs font-medium uppercase tracking-[0.1em] text-muted-foreground">${esc(e.time)}</span>
+                  <span class="font-serif text-lg">${esc(e.title)}</span>
+                </div>
+                ${(e.details || [])
+                  .map(
+                    (d) =>
+                      `<span class="pl-[84px] font-sans text-sm italic text-muted-foreground">${esc(d)}</span>`
+                  )
+                  .join("")}
+              </div>`
+              )
+              .join("")}
+          </div>
+        </div>`
+        )
+        .join("");
+
+      // Dining
+      document.getElementById("dining-grid").innerHTML = dining
+        .map(
+          (day) => `
+        <div class="flex h-full flex-col gap-5 rounded-3xl border border-border bg-card/90 p-7 backdrop-blur">
+          <h3 class="font-serif text-2xl">${esc(day.day)}</h3>
+          <div class="flex flex-col gap-5">
+            ${day.courses
+              .map(
+                (c) => `
+              <div class="flex flex-col gap-2">
+                <div class="flex items-baseline gap-2">
+                  <span class="font-sans text-xs font-medium uppercase tracking-[0.16em] text-gold">${esc(c.label)}</span>
+                  <span class="h-px flex-1 bg-border"></span>
+                </div>
+                <span class="font-serif text-xl">${esc(c.heading)}</span>
+                ${
+                  c.items
+                    ? `<ul class="flex flex-col gap-1">${c.items
+                        .map(
+                          (it) =>
+                            `<li class="font-sans text-sm text-muted-foreground">${esc(it)}</li>`
+                        )
+                        .join("")}</ul>`
+                    : ""
+                }
+              </div>`
+              )
+              .join("")}
+          </div>
+        </div>`
+        )
+        .join("");
+
+      // Attire
+      const fancyMeter = (level) => {
+        let bars = "";
+        for (let i = 0; i < 4; i++) {
+          const on = i < level;
+          bars += `<span class="w-6 rounded-full ${on ? "bg-gold" : "bg-border"}" style="height:${8 + i * 5}px"></span>`;
+        }
+        return `
+          <div class="flex flex-col gap-2">
+            <div class="flex items-end gap-1.5">${bars}</div>
+            <span class="font-sans text-xs font-medium uppercase tracking-[0.14em] text-muted-foreground">Fancy level · ${level} of 4</span>
+          </div>`;
+      };
+
+      document.getElementById("attire-list").innerHTML = attire
+        .map((n, i) => {
+          const flip = i % 2 === 1;
+          const num = String(i + 1).padStart(2, "0");
+          const board = `
+            <div class="relative ${flip ? "md:order-2" : ""}">
+              <span aria-hidden="true" class="pointer-events-none absolute -top-12 z-0 select-none font-serif leading-none ${flip ? "right-0 md:-right-6" : "left-0 md:-left-6"}" style="font-size:8rem;color:rgba(176,138,79,0.15)">${num}</span>
+              <div class="relative z-10 mx-auto max-w-sm overflow-hidden rounded-3xl border border-border bg-card shadow-md">
+                <img src="${n.image}" alt="${esc(n.alt)}" class="w-full object-cover" />
+                <div class="absolute left-4 top-4 flex items-center gap-2 rounded-full bg-card/85 px-3 py-1.5 backdrop-blur-sm">
+                  <span class="font-sans text-[0.65rem] font-semibold uppercase tracking-[0.14em]">${esc(n.vibe)}</span>
+                </div>
+              </div>
+            </div>`;
+          const details = `
+            <div class="flex flex-col gap-6 ${flip ? "md:order-1" : ""}">
+              <div class="flex flex-col gap-2">
+                <span class="font-sans text-xs font-medium uppercase tracking-[0.16em] text-gold">${esc(n.night)} · ${esc(n.date)}</span>
+                <h3 class="font-serif text-4xl leading-[1.05] md:text-5xl">${esc(n.occasion)}</h3>
+              </div>
+              ${fancyMeter(n.fancy)}
+              <p class="max-w-md font-sans text-base leading-relaxed text-muted-foreground">${esc(n.notes)}</p>
+              <div class="flex flex-col gap-3">
+                <span class="font-sans text-xs uppercase tracking-[0.14em] text-muted-foreground">Key pieces</span>
+                <ul class="flex flex-col gap-2">
+                  ${n.keyPieces
+                    .map(
+                      (p) =>
+                        `<li class="flex items-baseline gap-3"><span class="mt-1 size-1.5 shrink-0 rounded-full bg-gold"></span><span class="font-serif text-lg italic">${esc(p)}</span></li>`
+                    )
+                    .join("")}
+                </ul>
+              </div>
+            </div>`;
+          return `<div class="grid items-center gap-10 md:grid-cols-2 md:gap-14">${board}${details}</div>`;
+        })
+        .join("");
+
+      // Packing
+      document.getElementById("packing-grid").innerHTML = packingCategories
+        .map(
+          (cat) => `
+        <div class="flex h-full flex-col gap-4 rounded-3xl border border-border bg-card p-7">
+          <h3 class="font-serif text-2xl">${esc(cat.title)}</h3>
+          <ul class="flex flex-col gap-2.5">
+            ${cat.items
+              .map(
+                (it) =>
+                  `<li class="flex items-center gap-3 font-sans text-sm text-muted-foreground"><i data-lucide="check" class="size-4 shrink-0 text-seaglass"></i>${esc(it)}</li>`
+              )
+              .join("")}
+          </ul>
+        </div>`
+        )
+        .join("");
+
+      // Render icons after DOM injection
+      if (window.lucide) lucide.createIcons();
+    </script>
+  </body>
+</html>
